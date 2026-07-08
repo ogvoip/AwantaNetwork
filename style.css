@@ -174,7 +174,7 @@ body {
     transition: all 0.3s;
 }
 
-..btn-discord:hover {
+.btn-discord:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.2);
 }
@@ -235,6 +235,16 @@ a {
     margin-bottom: 8rem;
 }
 
+.hero-btns {
+    display: grid;
+    gap: 1rem;
+    width: max-content;
+}
+
+.hero-btns button {
+    width: 100%;
+}
+
 .hero-text h1 {
     font-size: 3.8rem;
     line-height: 1.05;
@@ -250,17 +260,6 @@ a {
     margin-bottom: 2.5rem;
 }
 
-.hero-btns {
-    display: inline-flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.btn-primary {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--border-color);
-    color: var(--text-main);
-    padding: 1rem 2rem;
     border-radius: 12px;
     font-weight: 700;
     font-size: 1rem;
@@ -715,10 +714,6 @@ a {
         justify-content: center;
         padding: 1rem 1.1rem;
         margin-top: 0.5rem;
-    }
-
-    .header .btn-discord {
-        display: none;
     }
 
     .hero {
