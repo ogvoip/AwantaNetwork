@@ -82,20 +82,23 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-items: center;
     align-items: center;
+    gap: 1rem;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.9rem;
+    gap: 0.75rem;
     font-weight: 800;
     font-size: 1.2rem;
     letter-spacing: -0.5px;
     text-transform: uppercase;
     text-shadow: 0 0 18px rgba(30, 105, 255, 0.12);
+    justify-self: start;
 }
 
 .logo-img {
@@ -703,6 +706,19 @@ a {
         padding: 0.9rem 1.1rem;
         align-self: stretch;
         order: 3;
+    }
+
+    .hero-discord {
+        display: inline-flex;
+        width: 100%;
+        max-width: none;
+        justify-content: center;
+        padding: 1rem 1.1rem;
+        margin-top: 0.5rem;
+    }
+
+    .header .btn-discord {
+        display: none;
     }
 
     .hero {
