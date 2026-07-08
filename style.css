@@ -658,9 +658,19 @@ a {
 
 @media (max-width: 768px) {
     .nav-container {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
         padding: 1rem 1.2rem;
         gap: 1rem;
+    }
+
+    .logo {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo span {
+        display: none;
     }
 
     .nav-menu {
@@ -668,18 +678,31 @@ a {
         justify-content: center;
         flex-wrap: wrap;
         gap: 0.75rem;
+        order: 2;
     }
 
     .nav-link {
         font-size: 0.85rem;
-        padding: 0.4rem 0.25rem;
+        padding: 0.8rem 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        border: 1px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--text-main);
+        border-color: rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.08);
     }
 
     .btn-discord {
         width: 100%;
-        max-width: 260px;
+        max-width: none;
         padding: 0.9rem 1.1rem;
-        align-self: center;
+        align-self: stretch;
+        order: 3;
     }
 
     .hero {
